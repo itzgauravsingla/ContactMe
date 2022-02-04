@@ -31,7 +31,7 @@ function edit(){
     }
     else if(index <= rowCount)
     {
-        let userInput = prompt("Please enter the new data");
+        let userInput = prompt("Please enter the new data. Seprate each by a comma (,) and if there is no change in a column you can leave that empty.");
         let newData = userInput.split(",");
         let rowUpdate = row[index];
         let oldData = rowUpdate.querySelectorAll("td");
